@@ -14,8 +14,10 @@
     "dayjs": "^1.11.19",
     "gsap": "^3.14.2",
     "lucide-react": "^0.561.0",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "react": "^19.2.3",
+    "react-dom": "^19.2.0",
+    "react-tooltip": "^5.30.0",
+    "tooltip": "^1.6.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
