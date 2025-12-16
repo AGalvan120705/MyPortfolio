@@ -1,12 +1,13 @@
 import {useRef} from "react";
 import {Tooltip} from "react-tooltip";
 import {gsap} from "gsap";
+import useWindowStore from "#store/window.jsx";
 
 import {dockApps} from "#constants/index.jsx";
 import { useGSAP } from "@gsap/react";
-import { AlignCenterIcon } from "lucide-react";
 
 const Dock = () => {
+    const {openWindow, closeWindow, windows} = useWindowStore();
     const dockRef = useRef(null);
 
     useGSAP(() => {
@@ -60,8 +61,24 @@ const Dock = () => {
     }, []);
 
 
+    const toggleApp = (app) => {
+        if(!app.canOpen) return;
 
-    const toggleApp = (app) => {} 
+        const window = windows[app.id];
+
+        if (!window) {
+            console.error(`No window found for app ID: ${app.id}`);
+            return;
+        }
+
+        if(window.isOpen) {
+            closeWindow(app.id);
+        } else {
+            openWindow(app.id);
+        } 
+
+        console.log(windows);
+    } 
 
   return (
     <section id = "dock"> 
