@@ -3,7 +3,7 @@ import React from 'react'
 import WindowWrapper from '#hoc/windowWrapper.jsx';
 import { Copy, MoveRight, PanelLeft } from "lucide-react";
 import { Plus, Search, Share, ShieldHalf,   ChevronLeft, ChevronRight } from "lucide-react";
-import { blogPosts } from "#constants";
+import { linkedinPosts} from "#constants";
 
 const Safari = () => {
   return (
@@ -40,10 +40,10 @@ const Safari = () => {
             </div>
         </div>
         <div className="blog">
-            <h2>My Developer Blog</h2>
+            <h2>My Linkedin</h2>
 
             <div className="space-y-8"> 
-                {blogPosts.map(({ id, image, title, date, link}) => (
+                {linkedinPosts.map(({ id, image, title, date, link}) => (
                     <div key = {id} className="blog-post">
                         <div className="col-span-2">
                             <img src={image} alt={title}/>
