@@ -1,6 +1,6 @@
 import WindowControls from "#components/WindowControls";
 import React from 'react'
-import WindowWrapper from '#hoc/windowWrapper.jsx';
+import WindowWrapper from '#hoc/WindowWrapper';
 import { Copy, MoveRight, PanelLeft } from "lucide-react";
 import { Plus, Search, Share, ShieldHalf,   ChevronLeft, ChevronRight } from "lucide-react";
 import { linkedinPosts} from "#constants";
