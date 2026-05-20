@@ -197,7 +197,7 @@ const WORK_LOCATION = {
     // ▶ Project 1
     {
       id: 5,
-      name: "New Project Coming Soon",
+      name: "Experimental Data Science Project",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-5", // icon position inside Finder
@@ -205,38 +205,41 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "New Project Coming Soon.txt",
+          name: "Experimental Data Science Project.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "🚧 This project is currently under construction.",
-            "Check back soon for updates!",
+            "This project is an data science project that focuses on bringing awareness and knowledge about Diabetes to Tower Hamlets, London.", 
+            "The project uses multiple screens-and graphs-with a nav bar.",
           ],
         },
         {
           id: 2,
-          name: "Coming Soon",
+          name: "Experimental Data Science Project URL",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
+          href: "https://experimental-data-science-project.onrender.com",
           position: "top-10 right-20",
         },
         {
           id: 4,
-          name: "Coming Soon",
+          name: "Experimental Data Science Project Image",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
+          imageUrl: "/images/Overview.png",
         },
         {
           id: 5,
-          name: "Coming Soon",
+          name: "Experimental Data Science Project Code",
           icon: "/images/plain.png",
           kind: "file",
-          fileType: "fig",
+          fileType: "url",
+          href: "https://github.com/AGalvan120705/Experimental-Data-Science-Project",
           position: "top-60 right-20",
         },
       ],
@@ -293,7 +296,7 @@ const WORK_LOCATION = {
     // ▶ Project 3
     {
       id: 7,
-      name: "Sudoku Solver",
+      name: "Christmas Present Site",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-80",
@@ -301,30 +304,20 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "Sudoku Solver Project.txt",
+          name: "Christmas Present Site.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "Sudoku Solver is an intelligent application that solves Sudoku puzzles using advanced algorithms.",
-            "Simply input your puzzle or snap a photo of one on paper, and the solver instantly finds the solution and explains the logic.",
-            "Think of it like having a Sudoku expert in your pocket—combining powerful computation with clean visualization.",
-            "It's built with React and optimized algorithms, delivering instant solutions with an intuitive, user-friendly interface.",
+            "THis project was a site that a i gifted to my partner for Christmas.",
+            "The site features riddles that lead to different pages, each with a special message or memory. It was a fun way to combine coding with creativity and sentimentality!",
+            "The project led to my partner christmas present through the riddles.",
           ],
         },
         {
-          id: 2,
-          name: "sudoku-solver.com",
-          icon: "/images/safari.png",
-          kind: "file",
-          fileType: "url",
-          href: "",
-          position: "top-10 right-20",
-        },
-        {
           id: 4,
-          name: "sudoku-solver.png",
+          name: "christmas-present-site.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
@@ -333,11 +326,12 @@ const WORK_LOCATION = {
         },
         {
           id: 5,
-          name: "Coming Soon",
+          name: " Christmas Present Site Code",
           icon: "/images/plain.png",
           kind: "file",
           fileType: "fig",
           position: "top-60 right-20",
+          href: "https://github.com/AGalvan120705/Christmas-Present-Site",
         },
       ],
     },
@@ -389,9 +383,9 @@ const ABOUT_LOCATION = {
       image: "/images/about-me.png",
       description: [
         "Heya! I’m Anna 👋, a university student who loves to code.",
-        "I started out coding back in 2019 in year 9 and have never stopped since. I specialize in JavaScript, React, and any type of C—and I love making things feel stylish while being efficient",
+        "I started out coding back in 2019 in year 9 and have never stopped since. I specialize in JavaScript, Java, and Python—and I love making things feel stylish while being efficient",
         "I’m big on clean UI, good UX, and writing code that doesn’t need a search party to debug.",
-        "Outside of coding, you'll find me playing video games at 1am 🎮, trying out new cooking recipes or impulse-buying books that I definitely don't need 😅",
+        "Outside of coding, you'll find me drinking matcha at a trendy cafe, trying out new cooking recipes or impulse-buying books that I definitely don't need 😅",
       ],
     },
   ],
@@ -410,8 +404,6 @@ const RESUME_LOCATION = {
       icon: "/images/pdf.png",
       kind: "file",
       fileType: "pdf",
-      // you can add `href` if you want to open a hosted resume
-      // href: "/your/resume/path.pdf",
     },
   ],
 };
